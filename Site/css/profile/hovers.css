@@ -1,0 +1,54 @@
+@import url(./vars.css);
+
+/* header */
+
+.header-list__link:hover {
+    color: #0e8fcb;
+}
+
+.header-list__link:hover::before {
+    transform: scaleX(1);
+    height: 2.5px;
+}
+
+.header-list__link:hover::before {
+    color: var(--light-blue);
+}
+
+/* content */
+
+.profile_photo:hover {
+    border: 2px solid var(--light-pink);
+}
+
+.other-content__item-nickname textarea:hover {
+    border: 2px solid var(--light-pink);
+}
+
+.other-content__item-nickname textarea:focus {
+    border: 2px solid var(--light-pink);
+}
+
+.other-content__item-about textarea:hover {
+    border: 2px solid var(--light-pink);
+}
+
+.other-content__item-about textarea:focus {
+    border: 2px solid var(--light-pink);
+}
+
+.other-content__item-password textarea:hover {
+    border: 2px solid var(--light-pink);
+}
+
+.other-content__item-password textarea:focus {
+    border: 2px solid var(--light-pink);
+}
+
+.other-content__item-donwload:hover {
+    border: 2px solid var(--light-pink);
+}
+
+#button-save:hover {
+    border: 2px solid var(--light-pink);
+}
