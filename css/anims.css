@@ -1,0 +1,28 @@
+@keyframes anim-for-content-block {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+
+@keyframes im_here {
+    0% {
+        margin-left: -17%;
+    }
+
+    25% {
+        margin-left: -16.5%;
+    }
+    50% {
+        margin-left: -17%;
+    }
+    75% {
+        margin-left: -16.5%;
+    }
+    100% {
+        margin-left: -17%;
+    }
+}

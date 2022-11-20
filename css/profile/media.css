@@ -1,0 +1,109 @@
+@media (max-width: 1440px) {
+    
+}
+
+@media (max-width: 1024px) {
+    .profile-header > div {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer p:first-child {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    .profile-header {
+        margin-top: 20px;
+        height: 400px;
+        width: 265px;
+    }
+
+    .top-content .profile_photo {
+        width: 150px;
+        margin-left: 20%;
+    }
+
+    .other-content__item-about #about {
+        height: 50px;
+    }
+
+    .other-content-donwload {
+        display: none;
+    }
+
+    .header-list__item-active {
+        display: none;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .other-content__item-password textarea {
+        overflow-y: hidden;
+    }
+
+    .other-content-donwload {
+        visibility: none;
+    }
+
+    .button-save {
+        margin-top: 10px;
+    }
+
+    .button-save button {
+        margin-top: 25px;
+    }
+
+    .button-save a {
+        font-size: 14px;
+    }
+
+    .footer-content_item:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .footer-content_item:last-child{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .profile-header {
+        width: 235px;
+    }
+}
+
+@media (max-width: 320px) {
+    
+    .top-content {
+        margin-left: -10%;
+    }
+
+    .profile-header {
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .other-content__item-password {
+        width: 200px;
+    }
+    
+    .header-list__item a {
+        font-size: 18px;
+    }
+
+    .button-save {
+        margin-top: -10px;
+    }
+
+    .button-save a {
+        font-size: 12px;
+    }
+
+}

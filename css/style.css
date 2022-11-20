@@ -1,0 +1,230 @@
+ @import url('./vars.css');
+
+/* Полоса прокрутки */
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+  
+  body::-webkit-scrollbar-track {
+    background: var(--theme-bg);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid #40A9D9;
+  }
+
+* {
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+html {
+    background-color: #161616;
+}
+
+body::before {
+	background-image: url('./img/bg.jpg');
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	background-position: 50% 0;
+	content: ' ';
+    background-repeat: no-repeat; 
+	z-index: -1;	
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.header-list {
+    display: flex;
+    list-style: none;
+}
+
+.header-navigation li{
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* HEADER-LIST__LINK */
+
+.header-list__link {
+    position: relative;
+    text-decoration: none;
+    color: var(--light-pink);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.header-list__link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--light-pink);
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.header-list__link:hover {
+    color: rgb(255, 81, 237);
+}
+
+.header-list__link:hover::before {
+    transform: scaleX(1);
+    height: 2.5px;
+}
+
+.header-list__link:hover::before {
+    color: var(--light-pink);
+}
+
+/* HEADER-LIST-LINK__ACTIVE */
+
+.header-list__item-active a{
+    text-decoration: none;
+    color: var(--light-pink);
+}
+
+.header-list__link-active:before {
+    content: '';
+    position: absolute;
+    bottom: 5.5px;
+    top: 1;
+    width: 100px;
+    height: 2.5px;
+    transform: scaleX(1);
+    background-color: var(--light-pink);
+}
+
+/* CONTENT */
+
+.hello {
+    background-color: #1E1E1E;
+    position: absolute;
+    z-index: -1;
+    border-radius: 30px;
+    top: 25vh;
+    left: 20vh;
+    color: #40A9D9;
+    max-width: 60vh;
+    max-height: 60vh;
+    height: 60vh;
+    width: 60vh;
+    text-align: center;
+    box-shadow:0 0 5px 1.5px #40A9D9;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    animation-name: anim-for-content-block;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+/*  FOOOOOOTER */
+
+footer {
+    height: 21vh;
+    margin-top: 23%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #161616;
+}
+
+footer p {
+    color: var(--theme-text);
+    font-weight: 800;
+    font-size: 1.2vw;
+}
+
+.online-users {
+    position: absolute;
+    height: 30px;
+    width: 260px;
+    background-color: #1E1E1E;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2.5%;
+}
+
+.online-users ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15%;
+}
+
+.online-users li {
+    list-style: none;
+    padding: 5px;
+}
+
+.online-users a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
+.online-users img {
+    display: flex;
+    align-self: center;
+}
+
+.online {
+    display: flex;
+    background-color: #1E1E1E;
+    box-shadow: 0, 0, 5px 1.5px var(--light-blue);
+    height: 250px;
+    width: 300px;
+    color: var(--theme-text);
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: 5%;
+    text-align: center;
+    line-height: 25px;
+    box-shadow: 0 0 3px 0.5px var(--theme-text);
+    user-select: none;
+    margin-left: -17%;
+    transition: .3s;
+    animation-name: im_here;
+    animation-duration: 2s;
+    animation-delay: 7s;
+}
+
+.online p {
+    font-size: 0.9vw;
+    padding-top: 50px;
+}
+
+.online:hover {
+    margin-left: 0px;
+}
+
+.online-name {
+    margin-top: -6%;
+    margin-left: 90%;
+}

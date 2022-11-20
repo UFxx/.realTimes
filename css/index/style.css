@@ -1,0 +1,244 @@
+@import url('./vars.css');
+
+/* Полоса прокрутки */
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--theme-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid #ad1aaf;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+html {
+    background-color: var(--theme-bg);
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.header-content {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.header-list {
+    display: flex;
+    list-style: none;
+}
+
+.header-navigation li{
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* HEADER-LIST__LINK */
+
+.header-list__link {
+    position: relative;
+    text-decoration: none;
+    color: var(--light-blue);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.header-list__link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0e8fcb;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.header-list__link:hover {
+    color: #0e8fcb;
+}
+
+.header-list__link:hover::before {
+    transform: scaleX(1);
+    height: 2.5px;
+}
+
+.header-list__link:hover::before {
+    color: var(--light-blue);
+}
+
+/* HEADER-LIST-LINK__ACTIVE */
+
+.header-list__item-active a{
+    text-decoration: none;
+    color: #0e8fcb;
+}
+
+.header-list__link-active:before {
+    content: '';
+    position: absolute;
+    bottom: 5.5px;
+    top: 1  ;
+    bottom: 13px;
+    width: 100px;
+    height: 2.5px;
+    transform: scaleX(1);
+    background-color: #0e8fcb;
+}
+
+/* CONTENT */
+
+
+body:before {
+	position: absolute;
+	content: ' ';
+    background-image: url('../../img/bg.jpg');
+    background-size: cover;
+	background-position: 50% 0;
+    background-repeat: no-repeat; 
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.welcome {
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    left: 15%;
+    height: 375px;
+    width: 350px;
+    background-color: #1E1E1E;
+    border-radius: 12px;
+    box-shadow: 0 0 5px 1.5px var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text {
+    font-weight: bold;
+    font-size: 23px;
+    color: var(--light-blue);
+    text-align: center;
+}
+
+/* ONLINE */
+
+.online {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--theme-bg);
+    box-shadow: 0 0 5px 0.5px var(--theme-text);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: -270px;
+    user-select: none;
+    transition: 0.3s ease-in-out;
+    animation-delay: 5s;
+    animation-duration: 1.5s;
+    animation-name: im_here;
+}
+
+.online:hover {
+    margin-left: -10px;
+}
+
+.users-online {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.users-online a {
+    text-decoration: none;
+}
+
+.users-name-online {
+    color: var(--light-blue);
+    font-size: 14px;
+    padding: 5px;
+}
+
+.users-online img {
+    width: 40px;
+    height: 40px;
+}
+
+.online-title {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.online-title p {
+    color: var(--light-pink);
+    margin-top: 10%;
+    line-height: 30px;
+}
+
+/* FOOTER */
+
+main {
+    height: 93vh;
+}
+
+footer {
+    background-color: var(--theme-bg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    flex-wrap: wrap;
+}
+
+.footer-content_item {
+    color: var(--light-pink);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #0000008c;
+    transition: background 1s ease;
+}

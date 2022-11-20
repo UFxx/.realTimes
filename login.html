@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/login/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <nav class="header-navigation">
+                    <ul class="header-list">
+                        <li class="header-list__item">
+                            <a href="index.html" class="header-list__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header-list__item">
+                            <a href="chat.html" class="header-list__link">
+                                Чат
+                            </a>
+                        </li>
+                        <li class="header-list__item">
+                            <a href="news.html" class="header-list__link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="header-list__item">
+                            <a href="profile.html" class="header-list__link">
+                                Профиль
+                            </a>
+                        </li>
+                        <li class="header-list__item-active">
+                            <a href="login.html" class="header-list__link-active">
+                                Войти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="login-content">
+            <h1>Войти</h1>
+            <div class="login-forms">
+                <form action="register">
+                    <input type="email" name="login" id="login" placeholder="Введите логин">
+                    <input type="password" name="password" id="password" placeholder="Введите пароль">
+                    <button type="submit" id="btn_register"><a href="profile.html">Войти</a></button>
+                </form>
+            </div>
+            <a href="register.html">Ещё нет аккаунта?</a>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

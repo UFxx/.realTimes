@@ -1,0 +1,80 @@
+@import url(./vars.css);
+
+@media (max-width: 768px) {
+
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .item-text {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .footer-content_item:first-child {
+        display: none;
+    }
+
+}
+
+@media (max-width: 425px) {
+ 
+    .header-list li:first-child {
+        display: none;
+    }
+
+    .main-container-items {
+        width: 100%;
+    }
+
+    .main-container-items .item .item-photo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .main-container-items .item .item-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .main-container-items .item .item-text {
+        font-size: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer p {
+        font-size: 3px;
+
+    }
+}
+
+@media (max-width: 320px) {
+
+    .header-navigation li {
+        font-size: 10px;
+    }
+
+    .main-container-items .item .item-photo {
+        width: 130px;
+        height: 150px;
+    }
+    
+    .main-container-items .item .item-photo img {
+        width: 130px;
+        height: 150px;
+    }
+
+    .main-container-items .item .item-text {
+        font-size: 9px;
+    }
+}
